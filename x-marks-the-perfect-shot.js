@@ -1,20 +1,20 @@
 //this program takes the parades movements by direction (N,S,E,W) given by variable "moves" and provides a grid co-ordinate spot.
-const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];
+ const moves = ['north', 'north', 'west', 'west', 'north', 'east','north'];
+ let y = 0;
+ let x = 0;
 
 const finalPosition = function (moves) {
  for (let i = 0; i < moves.length; i++) {
-  let y = 0;
-  let x = 0;
-    if (moves[i] = "north") {
+    if (moves[i] === "north") {
       y++;
     }
-    else if (moves[i] = "south") {
+    else if (moves[i] === "south") {
       y--;
     }
-    else if (moves[i] = "east") {
+    else if (moves[i] === "east") {
       x++;
     }
-    else if(moves[i] = "west") {
+    else if(moves[i] === "west") {
       x--;
     }    
 }
